@@ -224,14 +224,6 @@ body {
 }
 
 #container {
-  display: -moz-box;
-  display: -o-box;
-  display: -webkit-box;
-  display: box;
-  -moz-box-orient: vertical;
-  -o-box-orient: vertical;
-  -webkit-box-orient: vertical;
-  box-orient: vertical;
   min-height: 100%;
 }
 
@@ -241,7 +233,7 @@ header,
 }
 
 header {
-  margin-top: 10px;
+  padding-top: 10px;
   position: relative;
 }
 
@@ -267,7 +259,7 @@ header nav {
   border-radius: 8px;
   position: absolute;
   right: 10px;
-  top: 30px;
+  top: 40px;
 }
 
 header ul {
@@ -287,16 +279,26 @@ header ul li a:visited {
 }
 
 #content {
-  -moz-box-flex: 1;
-  -o-box-flex: 1;
-  -webkit-box-flex: 1;
-  box-flex: 1;
+  clear: both;
+  overflow: auto;
+  padding-bottom: 100px; /* must be same height as footer */
 }
 
 footer {
   background: #dacf9d;
   clear: both;
+  height: 100px;
+  margin-top: -100px; /* negative value of footer height */
   padding: 0 10px;
+  position: relative;
+}
+
+/* Opera fix */
+body:before {
+  content: "";
+  float: left;
+  height: 100%;
+  margin-top: -32767px;/
 }
 
 /* ==|== non-semantic helper classes ========================================
