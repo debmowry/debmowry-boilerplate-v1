@@ -241,8 +241,16 @@ header hgroup {
   float: left;
 }
 
-header h1 {
-  margin-top: 0;
+header hgroup h1,
+header hgroup h2 {
+  /* font-family: 'Great Vibes', cursive; */
+  font-family: 'Alex Brush', cursive;
+  font-weight: normal;
+}
+
+header hgroup h1 {
+  font-size: 50px;
+  margin: 0;
 }
 
 header form {
