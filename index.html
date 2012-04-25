@@ -38,7 +38,6 @@
 </head>
 
 <body>
-
   <div id="container">
     <header>
       <hgroup>
@@ -46,14 +45,15 @@
         <h2 id="slogan">This would be a slogan.</h2>
       </hgroup>
       <form action method="get">
-        <label for="searchquery">Search:</label>
-        <input id="searchquery" name="Search" type="search">
+        <label for="searchquery" class="visuallyhidden">Search for:</label>
+        <input id="searchquery" name="searchquery" type="search">
+        <input id="searchsubmit" type="submit" value="Search">
       </form>
       <nav id="mainNav">
         <h2 class="visuallyhidden">Main navigation</h2>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li  class="active"><a href="#">About</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Gallery</a></li>
           <li><a href="#">Tutorials</a></li>
@@ -123,6 +123,5 @@
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
-  
 </body>
 </html>
