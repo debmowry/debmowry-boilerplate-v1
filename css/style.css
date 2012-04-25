@@ -304,7 +304,8 @@ header ul li.active a {
 }
 
 header ul li:hover {
-  background: #ece9f1 url(../img/menu-arrow.gif) no-repeat 50% 100%;
+  /* background: #ece9f1 url(../img/menu-arrow.gif) no-repeat 50% 100%; */
+  background: #d2d8d6 url(../img/menu-arrow.gif) no-repeat 50% 100%;
 }
 
 header ul li a:hover {
@@ -331,7 +332,7 @@ footer {
 }
 
 #sidebar .block {
-  background: #e1e5e4;
+  background: #ece9f1;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
@@ -406,7 +407,7 @@ input[type="submit"] {
 
 @media only screen and (min-width: 1200px) {
   header nav {
-    background-color: #e1e5e4;
+    background-color: #ece9f1;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
@@ -432,14 +433,14 @@ input[type="submit"] {
     border-bottom: none;
   }
   header ul li.active {
-    background: #f0f2f1 url(../img/menu-arrow-left.gif) no-repeat 100% 50%;
+    background: #f6f4f8 url(../img/menu-arrow-left.gif) no-repeat 100% 50%;
   }
   header ul li.active a {
     color: #142564;
     font-weight: bold;
   }
   header ul li:hover {
-    background: #ece9f1 url(../img/menu-arrow-left.gif) no-repeat 100% 50%;
+    background: #e8dee9 url(../img/menu-arrow-left.gif) no-repeat 100% 50%;
   }
   #content {
     margin-left: 18%;
