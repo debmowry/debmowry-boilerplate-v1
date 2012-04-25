@@ -220,12 +220,17 @@ body {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
 #container {
   margin: 0 3%;
   min-height: 100%;
 }
 
 header {
+  border-bottom: 5px solid #35447a;
   color: #35447a;
   height: 100%;
   overflow: auto;
@@ -286,10 +291,6 @@ header ul li a:visited {
   text-decoration: none;
 }
 
-header ul li:hover {
-  background: #ece9f1 url(../img/menu-arrow.gif) no-repeat 50% 100%;
-}
-
 header ul li.active {
   background: #35447a;
   background: -moz-linear-gradient(top, #9aa1bd 0%, #35447a 40%);
@@ -302,13 +303,47 @@ header ul li.active a {
   color: #ffffff;
 }
 
+header ul li:hover {
+  background: #ece9f1 url(../img/menu-arrow.gif) no-repeat 50% 100%;
+}
+
+header ul li a:hover {
+  color: #142564;
+}
+
 #content,
 footer {
-  border-top: 5px solid #35447a;
   clear: both;
 }
 
+#main, #sidebar {
+  margin-top: 20px;
+}
+
+#main {
+  float: left;
+  width: 75%;
+}
+
+#sidebar {
+  float: right;
+  width: 22%;
+}
+
+#sidebar .block {
+  background: #e1e5e4;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: 1px 1px 4px #afb4ba;
+  -webkit-box-shadow: 1px 1px 4px #afb4ba;
+  box-shadow: 1px 1px 4px #afb4ba;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
 footer {
+  border-top: 5px solid #35447a;
   margin: 0 3%;
 }
 
@@ -369,14 +404,49 @@ input[type="submit"] {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
-
+@media only screen and (min-width: 1200px) {
+  header nav {
+    background-color: #e1e5e4;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 1px 1px 4px #afb4ba;
+    -webkit-box-shadow: 1px 1px 4px #afb4ba;
+    box-shadow: 1px 1px 4px #afb4ba;
+    margin-top: 20px;
+    position: fixed;
+    text-align: right;
+    top: 100px;
+    width: 15%;
+  }
+  header ul {
+    float: none;
+  }
+  header ul li {
+    border-bottom: 1px dashed #b5bfbb;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    float: none;
+  }
+  header ul li.last {
+    border-bottom: none;
+  }
+  header ul li.active {
+    background: #f0f2f1 url(../img/menu-arrow-left.gif) no-repeat 100% 50%;
+  }
+  header ul li.active a {
+    color: #142564;
+    font-weight: bold;
+  }
+  header ul li:hover {
+    background: #ece9f1 url(../img/menu-arrow-left.gif) no-repeat 100% 50%;
+  }
+  #content {
+    margin-left: 18%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-
 }
 
 
